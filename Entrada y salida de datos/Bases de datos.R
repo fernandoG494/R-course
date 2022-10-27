@@ -12,4 +12,4 @@ res <- dbSendQuery(connection, 'SELECT * from coches WHERE cyl = 8')
 dbFetch(res)
 
 dbClearResult(res)
-dbD
+dbDisconnect(res)
